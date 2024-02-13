@@ -1,42 +1,55 @@
-### TODO
+# 42-TRANSCENDANCE
 
-### Security concerns
+## Description
 
+This project aims to create a comprehensive web application for gaming and social interaction, with a primary focus on Pong gameplay. The platform includes features for user authentication, account management, chat functionality, and real-time multiplayer Pong gameplay. It emphasizes security, user engagement, and seamless gameplay experience.
 
-    Any password stored in your database must be encrypted
-    Your website must be protected against SQL injections
-    You must implement some kind of server-side validation for forms and any user input
+## Features
+
+### Security Concerns
+- All passwords stored in the database are encrypted for enhanced security.
+- Implemented protections against SQL injections to safeguard the website's integrity.
+- Utilized server-side validation for forms and user inputs to prevent malicious activities.
 
 ### User Account
-
-    A user must log in using the OAuth system of 42 intranet
-    A user must be able to choose a unique name that will be displayed on the website
-    A user has several victories and losses and other stats (ladder level, achievements etc...)
-    A user must have an avatar generated or uploaded by the user
-    A user must be able to activate a 2-factor authentication (like google authenticator or an SMS etc...)
-    A user can add other users as friends, and see their current status (online, offline, in a game...)
-    Each user has a match history (including duel, ladder) that can be consulted by anyone logged-in
+- Users can log in using the OAuth system of 42 intranet for streamlined authentication.
+- Ability for users to choose a unique display name.
+- Comprehensive user profile with statistics, including victories, losses, ladder level, and achievements.
+- Option for users to upload or generate avatars.
+- Support for 2-factor authentication methods like Google Authenticator or SMS.
+- Users can add friends, view their status, and access match history.
 
 ### Chat
-
-    Users must be able to create channels public/private or protected by a password
-    Users must be able to send direct messages to other users
-    Users must be able to block other user and therefore they will not see their messages anymore
-    A user that creates a new channel is automatically its owner until he leaves the channel
-        owner of a channel can add/change/remove a password to access the channel
-        owner can select a user to be an administrator and is also an administrator of the channel
-            administrator can ban or mute users for a certain amount of time
-    Through the chat interface users should be able to ask other players to do a Pong match
-    Through the chat interface users must be able to see other players profiles
+- Creation of public/private/protected channels.
+- Direct messaging capability between users.
+- Ability to block other users, ensuring privacy and control over interactions.
+- Channel ownership management with password setting and administrator privileges.
+- Administrators can ban, kick or mute users for a specified duration but not channel owners.
+- Integration with Pong gameplay, allowing users to initiate matches and view player profiles directly from the chat interface.
 
 ### Game
+- Live multiplayer Pong gameplay directly on the website.
+- Match-making system for automatic pairing of players.
+- Customization options for gameplay, including power-ups and different maps.
+- Responsive design for optimal user experience across devices.
+- Consideration for network issues, ensuring smooth gameplay despite disconnects or lag.
 
+## Technologies Used
 
-    The main purpose of this website is to play pong against other players and show everyone how good you are!
-    Therefore we should be able to play pong directly on the website and live against another player.
-    There must be a match-making system, user can join a game queue and are automatically matched with another player.
-    It can be on a canvas or it can be with 3d effects, it can be ugly but it must be a pong like the one from 1972.
-    You need to have some game customization options (power-ups, different maps etc) but the user must be able to play a default pong game without any added stuff.
-    The game must be responsive!
-    Think about network issues, like disconnects or lag. The user experience should be the best possible.
-    Other users can watch the game live without interfering in it.
+- Backend: NestJS
+- Frontend: React
+- Database: PostgreSQL
+
+## Installation
+
+1. Clone the repository from GitHub.
+3. Configure environment variables for database connection and OAuth authentication.
+4. Run the application using `docker compose up --build`
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any inquiries or support, please contact [email@example.com](fahdstitu123@gmail.com).
