@@ -193,7 +193,6 @@ export class GameGateway implements OnGatewayConnection, OnGatewayDisconnect {
   ) {
     // Check if the user is already in the queue based on a unique identifier (e.g., user ID)
     // const userId = getUserIdFromClient('matchmaking', client); // Implement a function to extract the user ID
-    console.log('matchmaking', data.width);
     // If the user is not already in the queue, add them
     const userId = getUserIdFromClient('matchmaking', client);
     const isUserInQueue = this.queue.find((c) => c.userId === userId);

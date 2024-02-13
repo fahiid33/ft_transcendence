@@ -886,7 +886,6 @@ export default function Chat (props: any)  {
                 {
                     setFriends(response.filter((friend : any) => friend.username !== response.username));
                     // setDisplayDms(!DisplayDms);
-                    console.log("blockeddddd");
                     if (!showRoom)
                     {
                         setShowDm(false);
