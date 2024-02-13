@@ -46,9 +46,6 @@ This project aims to create a comprehensive web application for gaming and socia
 3. Configure environment variables for database connection and OAuth authentication.
 4. Run the application using `docker compose up --build`
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
